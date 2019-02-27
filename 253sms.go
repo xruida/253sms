@@ -37,7 +37,6 @@ func NewSms253(appcode string, appsecret string) *Sms253 {
 
 // SendSms 发送短信
 func (a *Sms253) SendSms(template string, recnum string) (*Relust, error) {
-
 	params := make(map[string]interface{})
 	//请登录zz.253.com获取API账号、密码以及短信发送的URL
 	params["account"] = a.AppCode    //创蓝API账号
